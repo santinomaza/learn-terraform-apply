@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: MPL-2.0
 
 terraform {
-  required_version = "~> 1.6"
+  required_version = ">= 1.5.7"
   required_providers {
     aws = {
       source  = "hashicorp/aws"
@@ -17,12 +17,11 @@ terraform {
       version = "0.9.1"
     }
   }
-  /* Uncomment this block to use Terraform Cloud for this tutorial
+  #Uncomment this block to use Terraform Cloud for this tutorial
   cloud {
-    organization = "organization-name"
+    organization = "hashicorps-codecamp"
     workspaces {
       name = "learn-terraform-apply"
     }
   }
-*/
 }
